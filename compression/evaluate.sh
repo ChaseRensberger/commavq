@@ -14,5 +14,5 @@ cd $DIR
 
 rm -rf $DECOMPRESSED_DIR
 unzip $ZIP_FILE -d $DECOMPRESSED_DIR
-OUTPUT_DIR=$DECOMPRESSED_DIR python ./compression_challenge_submission_decompressed/decompress.py
-UNPACKED_ARCHIVE=$DECOMPRESSED_DIR PACKED_ARCHIVE=$ZIP_FILE python $DIR/evaluate.py
+OUTPUT_DIR=$DECOMPRESSED_DIR python3 ./compression_challenge_submission_decompressed/decompress.py
+UNPACKED_ARCHIVE=$DECOMPRESSED_DIR PACKED_ARCHIVE=$ZIP_FILE python3 $DIR/evaluate.py
